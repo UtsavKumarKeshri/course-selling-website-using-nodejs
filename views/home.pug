@@ -1,0 +1,146 @@
+extends base.pug
+
+block style 
+    style
+        include ../static/style.css
+        include ../static/styleHome.css
+block content 
+        section.container 
+        div.imageContainer
+            p . 
+        div.textContainer
+            h3 Notices
+            include marquee.html
+
+
+        section.coursesOffered 
+            div.courseHeading
+                h2 #[a(href="/courses") Courses Offered] 
+                hr
+            div.courses
+                div.DCA
+                    a(href="/registrationForm")
+                        img(src="../static/dca.png", alt="dca")
+                    p Diploma In Computer Application 
+                div.DCA
+                    a(href="/registrationForm")
+                        img(src="../static/adca.png", alt="dca")
+                    p Advanced Diploma In Computer Application 
+                div.DCA
+                    a(href="/registrationForm")
+                        img(src="../static/office.jpg", alt="dca")
+                    p Diploma In Computer Application 
+            button(id = "viewMoreCourses") 
+                    a(href='/Courses') View More
+        
+        section.containerBox2 
+            div.achievers
+                div.ourAchiever
+                    h2 Our Achievers
+                    hr 
+                div.achiever1
+                    img(src="../static/DUMMY 4_23874611_logo.jpg", alt="dca")
+                    h2 Achiever1
+                div.achiever1
+                    img(src="../static/DUMMY 4_23874611_logo.jpg", alt="dca")
+                    h2 Achiever2
+                div.achiever1
+                    img(src="../static/DUMMY 3_28223653_logo.png", alt="dca")
+                    h2 Achiever3
+                div.achiever1
+                    img(src="../static/DUMMY 3_28223653_logo.png", alt="dca")
+                    h2 Achiever4
+            div.teachers
+                div.ourTeacher
+                    h2 Our Teacher 
+                    hr
+                div.teacher
+                    img(src="../static/DUMMY 4_23874611_logo.jpg", alt="dca")
+                    h2 Teacher 2
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, eum.
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, neque.
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, eum.
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, neque.
+        section.testimonalContainer
+            div.testimonalHeading
+                h2  What Students Says...
+                hr
+            div.testimonals
+                div.reviews
+                    img(src="../static/DUMMY 4_23874611_logo.jpg", alt="dca")
+                    p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, iusto
+                div.reviews
+                    img(src="../static/DUMMY 3_28223653_logo.png", alt="dca")
+                    p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, iusto
+                div.reviews
+                    img(src="../static/DUMMY 3_28223653_logo.png", alt="dca")
+                    p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, iusto
+                div.reviews
+                    img(src="../static/DUMMY 4_23874611_logo.jpg", alt="dca")
+                    p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, iusto!
+                
+                    
+        //- section.containerBox2        
+        //-     div.achiever-teacher   
+        //-         div.achieverHeading
+        //-             h2 Our Achiever
+        //-             hr
+        //-         div.achievers
+        //-             div.achiever1
+        //-                 img(src="../static/DUMMY 4_23874611_logo.jpg", alt="dca")
+        //-                 h3 Sita Kumari
+        //-             div.achiever1
+        //-                 img(src="../static/DUMMY 4_23874611_logo.jpg", alt="dca")
+        //-                 h3 Rita Kumari
+        //-         div.achievers2
+        //-             div.achiever1
+        //-                 img(src="../static/DUMMY 3_28223653_logo.png", alt="dca")
+        //-                 h3 Akshay Kumar
+        //-             div.achiever1
+        //-                 img(src="../static/DUMMY 3_28223653_logo.png", alt="dca")
+        //-                 h3 Ujjwal Kumar
+            
+        //-     div.faculty  
+        //-         div.teacherHeading
+        //-             h2 Our Achiever
+        //-             hr
+                
+        //-         div.facultyDetails
+        //-             div.teacher1
+        //-                 img(src="../static/DUMMY 4_23874611_logo.jpg", alt="dca")
+        //-                 h3 Sita Kumari 
+                       
+                //-     div.achiever1
+                //-         img(src="../static/DUMMY 3_28223653_logo.png", alt="dca")
+                //-         h3 Akshay Kumar
+                //-     div.achiever1
+                //-         img(src="../static/DUMMY 3_28223653_logo.png", alt="dca")
+                //-         h3 Ujjwal Kumar
+
+            //- div.courseContainer1
+            //-     p#DCA DIPLOMA IN COMPUTER APPLICATION <br>(DCA0040)
+            //-         img#dcaImage(src="../static/dca.png", alt="DCA")
+                
+        //-     div.courseContainer2
+        //-         p ADVANCE DIPLOMA IN INFORMATION TECHNOLOGY (AIT0052)
+        //-     div.courseContainer3
+        //-         p CERTIFICATE IN C-PROGRAMMING
+        //-     div.courseContainer1
+        //-         p DIPLOMA IN COMPUTER APPLICATION (DCA0040)
+        //-     div.courseContainer2
+        //-         p ADVANCE DIPLOMA IN INFORMATION TECHNOLOGY (AIT0052)
+        //-     div.courseContainer3
+        //-         p CERTIFICATE IN C-PROGRAMMING
+        //- section.achievers 
+        //-     div.courses
+        //-         h2 Our Achievers
+        //-     div.courseContainer1
+        //-         p DIPLOMA IN COMPUTER APPLICATION (DCA0040)
+        //-     div.courseContainer2
+        //-         p ADVANCE DIPLOMA IN INFORMATION TECHNOLOGY (AIT0052)
+        //-     div.courseContainer3
+        //-         p CERTIFICATE IN C-PROGRAMMING
+        //-     div.courseContainer1
+        //-         p DIPLOMA IN COMPUTER APPLICATION (DCA0040)
+                
+            

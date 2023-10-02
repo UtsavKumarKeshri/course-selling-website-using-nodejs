@@ -1,0 +1,37 @@
+doctype html 
+html
+    head 
+        title WebPage 
+        block style
+    body
+        header.header  
+            p#heading WELCOME TO  COMPUTER ACADEMY WEBSITE
+            //- a#socialSiteLink(href="https://twitter.com/")
+            //-     img#twitter(src="../static/th.png", alt="twitter")
+            //- a#socialSiteLink(href="https://www.instagram.com/")
+            //-     img#instagram(src="../static/insta.png", alt="instagram")
+            //- a#socialSiteLink(href="https://www.facebook.com/")
+            //-     img#facebook(src="../static/facebok.jpeg", alt="facebook")
+            p#headingAdd This is a demo website designed for learning purpose
+            div.register
+                p#Register #[a(href="registrationForm") Register]
+                p#Register #[a(href="login") Login]
+        nav.navbar  
+            ul
+                li #[a(href="/") Home]
+                li #[a(href="/courses") Courses]
+                li #[a(href="/About") About Us]
+                li #[a(href="/contact") Contact US]
+        block content 
+        div.developerSection
+            div.leftDeveloperSection
+                h2 Designed & Developed by:
+                p Utsav Kumar
+            div.rightDeveloperSection
+                h2 Contact Person:
+                p Utsav Kumar  
+                p      9117424403
+                p      9155267500
+        footer#footer 
+            | ©️ Copyright Designed and Developed by Utsav Kumar. All Rights Reserved.
+        hr

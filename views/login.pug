@@ -1,0 +1,13 @@
+extends base.pug
+block style 
+    style 
+        include ../static/style.css
+        include ../static/login.css
+block content
+    section.loginForm 
+        h2 Sign In
+
+        input(type = "text", class = "userInput" name = "User_Name", placeholder = "Enter User Name")
+        input(type = "text", class = "userInput", name = "Password", placeholder = "Enter Password")
+        button(class = "submit")
+            |   Submit

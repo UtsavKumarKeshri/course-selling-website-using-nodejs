@@ -1,0 +1,26 @@
+.about{
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 80px;
+    background-color: rgb(245, 209, 196);
+    margin-left: 35px;
+    margin-right: 35px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 15px rgb(8, 157, 212);
+}
+
+.about  h2{
+    border: 3px solid   rgb(8, 4, 135);
+    box-shadow: 5px 5px 5px green;
+    border-radius: 50%;
+    background-color: antiquewhite;
+    margin-bottom: 30px;
+    color: brown;
+    font-size: 34px;
+}
+
+.about  p{
+    font-size: 25px;
+    margin-left: 38px;
+    margin-right: 38px;
+}

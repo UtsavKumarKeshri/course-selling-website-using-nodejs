@@ -1,0 +1,76 @@
+extends base.pug
+block style 
+    style
+        include ../static/style.css
+        include ../static/styleHome.css  
+        include ../static/formStyle.css 
+block content 
+
+    section.registration
+        div.RegistrationForm
+            form(action="/registrationForm" method ="post") 
+                label.Name(for="name") First Name: 
+                    input#fName(type = "text", class = "form" name = "First_Name", placeholder = "Enter Your First Name")
+                br
+                br
+                br
+                label.Name(for="name") Last Name: 
+                    input#fName(type = "text", class = "form" name = "Last_Name", placeholder = "Enter Your Last Name") 
+                br
+                br
+                br
+                label.Name(for="Email") Email Id :
+                    input#fName(type="text", class="form", name= "Email", placeholder="Enter Your Email Id")
+                br
+                br
+                br
+                label.Name(for="Mob") Mobile No 
+                input#fName(type="number", class = "form", name="Mobile", placeholder="Enter your Mobile No.", min = "6200000000", max = "9999999999")
+                br
+                br
+                br
+                label.Name(for="aadhaar") Aadhaar Number :
+                input#input(type="number", class="form", name="aadhaar", placeholder="Enter Your Aadhaar no", min = "000000000000", max = "999999999999") 
+                br
+                br
+                br
+                label.Name(for="gender") Gender :
+                
+                select#course(name="gender"   class="selectCourse") 
+                    each gender in ['select', 'Male', 'Female', 'Other']
+                        option= gender
+                //- input#input(type="radio", name="gender") 
+                //- span#male Male
+                //- input#input(type="radio", name="gender") 
+                //- span#female Female 
+                //- input#input(type="radio", name="gender") 
+                //- span#other Other 
+                br
+                br
+                label.Name(for="courseSelection") Select Course :
+                select#course(name="courseSelection"   class="selectCourse") 
+                    each courseSelection in [ "Select", "Diploma in Computer Application (DCA)", "Advanced Diploma in Computer Application (ADCA)", "Certificate in MS-Office", "Desktop Publishing", "Programming in C", "Computer Basic Course", "Programming in C", "Certificate in HTML BASIC"]
+                                option= courseSelection
+                br
+                br
+                br
+                label.Name(for="correspondenceAddress") Correspondence Address: 
+                br
+                textarea#textarea(type = "text", name="correspondenceAddress" placeholder= "Enter Present Address" cols="40", rows="5") 
+                br
+                label.Name(for="permanentAddress") Permanent Address: 
+                br
+                textarea#textarea(type = "text", name="permanentAddress", cols="40", rows="5", placeholder= "Enter Permanent Address") 
+                br
+                br
+                br
+                label.msg(for="Message") Any Other Message or Query: 
+                br
+                textarea#Message(name="Message", cols="40", rows="5", placeholder= "Enter Your Message/Query") 
+                br
+                br
+                br
+                
+                button(class="submit")
+                    |Submit
+        

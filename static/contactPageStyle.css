@@ -1,0 +1,62 @@
+.formContainer{
+    background: url("../static/OIP.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+  }
+  
+.contactForm{
+    
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    padding: 25px;    
+    border-radius: 25px;
+    opacity: 1;
+    margin: 10px    35px;
+    height: 30px;
+    width: 500px;
+    border-radius: 25px;
+    outline: none;
+    font-size: 1.3rem;
+}
+
+.state{
+    border-radius: 25px;
+    opacity: 1;
+    margin: 10px    35px;
+    height: 30px;
+    width: 500px;
+    border-radius: 25px;
+    outline: none;
+    font-size: 1.3rem;
+}
+
+
+.lbl{
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+.message{
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgb(211 100 100 / 24%) 0%, rgb(100 185 213) 49%, rgb(87 193 189) 100%, rgb(26 25 30) 100%);
+    padding: 25px;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    margin-top: 5px;
+}
+
+
+.submitContactPage{
+    cursor: pointer;
+    border-radius: 25px;
+    color: aliceblue;
+    padding: 15px;
+    background-color: rgb(0, 142, 50);
+    font-size: 1.3rem;
+}

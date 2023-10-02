@@ -1,0 +1,9 @@
+.marquee-container{
+    
+    font-size: 24px;
+}
+
+.marquee-container  li{
+    text-align: center;
+    margin: 10px;
+}
